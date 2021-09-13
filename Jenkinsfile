@@ -10,7 +10,8 @@ pipeline {
             steps {
                 echo 'Building..'
                 dir (‘maven-adderapp’) {
-                    sh 'mvn -DskipTests clean package'            
+                    sh 'mvn -DskipTests clean package'
+                }       
             }
         }
             
@@ -33,4 +34,3 @@ pipeline {
         }
     }
 }
-
